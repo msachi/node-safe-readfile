@@ -1,0 +1,24 @@
+{
+  "author": "Talles L <talleslasmar@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/tallesl/safe-readfile/issues"
+  },
+  "description": "readFile that ignores ENOENT",
+  "homepage": "https://github.com/tallesl/safe-readfile",
+  "keywords": [
+    "safe",
+    "readfile",
+    "enoent"
+  ],
+  "license": "ISC",
+  "main": "./lib/safe-readfile.js",
+  "name": "safe-readfile",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tallesl/safe-readfile.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}
