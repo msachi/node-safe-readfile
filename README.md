@@ -13,7 +13,7 @@ Returns `undefined` if the file doesn't exist and `''` if the file exists and it
 
 ```javascript
 $ npm install safe-readfile
-safe-readfile@1.0.0 node_modules/safe-readfile
+safe-readfile@1.0.1 node_modules/safe-readfile
 $ node
 > var safeReadFile = require('safe-readfile').readFile
 undefined
