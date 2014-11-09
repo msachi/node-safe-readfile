@@ -4,13 +4,16 @@
     "url": "https://github.com/tallesl/safe-readfile/issues"
   },
   "description": "readFile that ignores ENOENT",
+  "directories": {
+    "lib": "./lib"
+  },
   "homepage": "https://github.com/tallesl/safe-readfile",
   "keywords": [
     "safe",
     "readfile",
     "enoent"
   ],
-  "license": "ISC",
+  "license": "Fair",
   "main": "./lib/safe-readfile.js",
   "name": "safe-readfile",
   "repository": {
@@ -22,3 +25,4 @@
   },
   "version": "1.0.0"
 }
+

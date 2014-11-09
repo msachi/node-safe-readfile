@@ -6,8 +6,7 @@
 
 [![npm](https://nodei.co/npm/safe-readfile.png?mini=true)](https://nodei.co/npm/safe-readfile/)
     
-A version of `fs.readFile` and `fs.readFileSync` that doesn't raise *ENOENT*.
-
+A version of `fs.readFile` and `fs.readFileSync` that doesn't raise *ENOENT*.  
 Returns `undefined` if the file doesn't exist and `''` if the file exists and it's empty.
 
 ## Usage
@@ -21,3 +20,4 @@ undefined
 > safeReadFile('nonexistent') // fs.readFile would throw ENOENT
 undefined
 ```
+
