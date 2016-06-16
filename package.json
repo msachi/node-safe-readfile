@@ -3,26 +3,26 @@
   "bugs": {
     "url": "https://github.com/tallesl/safe-readfile/issues"
   },
-  "description": "readFile that ignores ENOENT",
-  "directories": {
-    "lib": "./lib"
+  "description": "readFile that ignores ENOENT.",
+  "devDependencies": {
+    "coveralls": "^2.11.9",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.5.3",
+    "standard": "^7.1.2"
   },
-  "homepage": "https://github.com/tallesl/safe-readfile",
   "keywords": [
     "safe",
     "readfile",
     "enoent"
   ],
   "license": "Fair",
-  "main": "./lib/safe-readfile.js",
   "name": "safe-readfile",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tallesl/safe-readfile.git"
+    "url": "https://github.com/tallesl/node-safe-readfile.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard && mocha"
   },
   "version": "1.0.1"
 }
-

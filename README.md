@@ -1,23 +1,35 @@
-# :file_folder: safe `readFile`
-    
-[![dependencies](https://david-dm.org/tallesl/safe-readfile.png)](https://david-dm.org/tallesl/safe-readfile)
-[![devDependencies](https://david-dm.org/tallesl/safe-readfile/dev-status.png)](https://david-dm.org/tallesl/safe-readfile#info=devDependencies)
-[![npm module](https://badge.fury.io/js/safe-readfile.png)](http://badge.fury.io/js/safe-readfile)
+# safe-readfile
 
-[![npm](https://nodei.co/npm/safe-readfile.png?mini=true)](https://nodei.co/npm/safe-readfile/)
+[![][build-img]][build]
+[![][coverage-img]][coverage]
+[![][dependencies-img]][dependencies]
+[![][devdependencies-img]][devdependencies]
+[![][npm-img]][npm]
     
-A version of `fs.readFile` and `fs.readFileSync` that doesn't raise *ENOENT*.  
+A version of [fs.readFile] and [fs.readFileSync] that doesn't raise `ENOENT`.  
 Returns `undefined` if the file doesn't exist and `''` if the file exists and it's empty.
+    
+[build]:               https://travis-ci.org/tallesl/node-safe-readfile
+[build-img]:           https://travis-ci.org/tallesl/node-safe-readfile.svg
+[coverage]:            https://coveralls.io/r/tallesl/node-safe-readfile?branch=master
+[coverage-img]:        https://coveralls.io/repos/tallesl/node-safe-readfile/badge.svg?branch=master
+[dependencies]:        https://david-dm.org/tallesl/node-safe-readfile
+[dependencies-img]:    https://david-dm.org/tallesl/node-safe-readfile.svg
+[devdependencies]:     https://david-dm.org/tallesl/node-safe-readfile#info=devDependencies
+[devDependencies-img]: https://david-dm.org/tallesl/node-safe-readfile/dev-status.svg
+[npm]:                 https://npmjs.com/package/safe-readfile
+[npm-img]:             https://badge.fury.io/js/safe-readfile.svg
+[fs.readFile]:         https://nodejs.org/api/fs.html#fs_fs_readfile_file_options_callback
+[fs.readFileSync]:     https://nodejs.org/api/fs.html#fs_fs_readfilesync_file_options
 
 ## Usage
 
-```javascript
+```js
 $ npm install safe-readfile
-safe-readfile@1.0.1 node_modules/safe-readfile
+(...)
 $ node
 > var safeReadFile = require('safe-readfile').readFile
 undefined
 > safeReadFile('nonexistent') // fs.readFile would throw ENOENT
 undefined
 ```
-
