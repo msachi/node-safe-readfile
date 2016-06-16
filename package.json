@@ -1,7 +1,7 @@
 {
   "author": "Talles L <talleslasmar@gmail.com>",
   "bugs": {
-    "url": "https://github.com/tallesl/safe-readfile/issues"
+    "url": "https://github.com/tallesl/node-safe-readfile/issues"
   },
   "description": "readFile that ignores ENOENT.",
   "devDependencies": {
